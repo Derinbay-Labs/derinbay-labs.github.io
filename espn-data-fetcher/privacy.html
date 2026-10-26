@@ -7,12 +7,12 @@
 <h1>Data Fetcher for ESPN Fantasy privacy policy</h1>
 <p>Last updated: 2026-10-26</p>
 <h2>What the extension does</h2>
-<p>The extension contains one static <code>declarativeNetRequest</code> rule, the same in the Chrome extension and the iOS Safari extension. When a page on <code>fantasy.espn.com</code> requests data from <code>site.api.espn.com</code>, the browser sends that request to <code>site.web.api.espn.com</code> instead. Chrome or Safari applies the rule itself; the iOS app only shows setup steps, and the extension has no code that runs.</p>
+<p>The extension contains one small script, the same in the Chrome extension and the iOS Safari extension, that runs only on <code>fantasy.espn.com</code>. When that page requests data from <code>site.api.espn.com</code>, the script changes the address to <code>site.web.api.espn.com</code> before the request is sent. It reads no page content and makes no requests of its own; the iOS app only shows setup steps.</p>
 <h2>What data it collects</h2>
-<p>None. The extension does not read, store, transmit, sell or share any personal or browsing data. It has no background script, no content script, no storage and no analytics. Derinbay Labs runs no server for it.</p>
+<p>None. The extension does not read, store, transmit, sell or share any personal or browsing data. It has no background script, no storage and no analytics. Derinbay Labs runs no server for it.</p>
 <h2>Third parties</h2>
 <p>Requests the ESPN page already makes still go to ESPN, under ESPN's own privacy policy. The extension adds no other recipient.</p>
 <h2>Removing it</h2>
-<p>Remove the extension from <code>chrome://extensions</code>, turn it off in iOS Settings › Apps › Safari › Extensions, or delete the iOS app at any time; the rule stops immediately.</p>
+<p>Remove the extension from <code>chrome://extensions</code>, turn it off in iOS Settings › Apps › Safari › Extensions, or delete the iOS app at any time; the script stops immediately.</p>
 <p><a href="index.html">Data Fetcher for ESPN Fantasy home</a></p>
 </html>
